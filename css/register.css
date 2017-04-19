@@ -1,0 +1,190 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+/*导航*/
+.navbar{
+    height: 120px;
+}
+#header-top{
+    margin-top: 10px;
+}
+#header-top li a{
+    font-size: 15px;
+}
+.navbar-brand-img{
+    float: left;
+}
+.navbar-brand-zc{
+    color: #000000;
+    font-weight: bold;
+    float: left;
+}
+.navbar-brand-zc span{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+/*注册*/
+.navbar-lj{
+    margin-left: 10px;
+}
+#content-zhuti{
+    margin-top: 10px;
+}
+.form-group-jz{
+    margin: 10px auto;
+    width: 250px;
+}
+.form-group-km {
+    width: 260px;
+}
+.form-group-lm{
+    color: #c0c0c0;
+}
+.star{
+  color: red;
+    font-weight: bold;
+}
+.form-fg{
+   border-bottom: 1px dashed #3c3c3c;
+    margin: 30px auto;
+}
+.form-group-bz{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.form-group-xq{
+    font-size: 12px;
+    color: #c0c0c0;
+}
+.checkbox-p p{
+    font-size: 10px;
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .navbar{
+        height: 75px;
+    }
+    /*导航*/
+    #header-top{
+        margin-top: 10px;
+    }
+    #header-top li a{
+        font-size: 15px;
+    }
+    .navbar-brand-img{
+        float: left;
+    }
+    .navbar-brand-zc{
+        font-size: 25px;
+        color: #000000;
+        font-weight: bold;
+        float: left;
+    }
+    .navbar-brand-zc span{
+        font-size: 25px;
+        color: #000000;
+        font-weight: bold;
+    }
+    /*注册*/
+    #content-zhuti{
+        margin-top: 10px;
+    }
+    .navbar-lj{
+        margin-right: 20px;
+    }
+    .form-group-jz{
+        margin: 10px auto;
+        width: 350px;
+    }
+    .form-group-km {
+        width: 220px;
+    }
+    .form-group-lm{
+        color: #c0c0c0;
+    }
+    .star{
+        color: red;
+        font-weight: bold;
+    }
+    .form-fg{
+        border-bottom: 1px dashed #3c3c3c;
+        margin: 30px auto;
+    }
+    .form-group-bz{
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .form-group-xq{
+        font-size: 12px;
+        color: #c0c0c0;
+    }
+    .checkbox-p p{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:1024px){
+    .navbar{
+        height: 75px;
+    }
+    /*导航*/
+    #header-top{
+        margin-top: 10px;
+    }
+    #header-top li a{
+        font-size: 15px;
+    }
+    .navbar-brand-img{
+        float: left;
+    }
+    .navbar-brand-zc{
+        font-size: 25px;
+        color: #000000;
+        font-weight: bold;
+        float: left;
+    }
+    .navbar-brand-zc span{
+        font-size: 25px;
+        color: #000000;
+        font-weight: bold;
+    }
+    /*注册*/
+    #content-zhuti{
+        margin-top: 10px;
+    }
+    .navbar-lj{
+        margin-right: 20px;
+    }
+    .form-group-jz{
+        margin: 10px auto;
+        width: 400px;
+    }
+    .form-group-km {
+        width: 260px;
+    }
+    .form-group-lm{
+        color: #c0c0c0;
+    }
+    .star{
+        color: red;
+        font-weight: bold;
+    }
+    .form-fg{
+        border-bottom: 1px dashed #3c3c3c;
+        margin: 30px auto;
+    }
+    .form-group-bz{
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .form-group-xq{
+        font-size: 12px;
+        color: #c0c0c0;
+    }
+    .checkbox-p p{
+        font-size: 10px;
+    }
+}

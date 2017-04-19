@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    .side{
+        position:fixed;
+        width:54px;
+        height:54px;
+        right: 50px;
+        top:214px;
+        z-index:100;}
+    .side  span{
+        width:54px;
+        height:54px;
+        float:left;
+        position:relative;
+    }
+    .side  span img{float:left;}
+</style>
+</head>
+<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="飞科,工作室,飞科工作室,css,web,web标准,网页制作,平面设计,布局," />
+    <meta name="description" content="欢迎您来到飞科工作室，本站致力于web标准化，研究css，注重代码书写中的规范；分享前台设计技巧" />
+    <title>无标题文档</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        .div1 {
+            position:relative;
+        }
+        .div1 ul {
+            position: relative;
+            left: 50%;
+            float: left;
+        }
+        .div1 li {
+            position: relative;
+            right: 50%;
+            display: inline;
+            float: left;
+            margin-left: 10px;
+        }
+        body{margin:40px;}
+        .btn-circle {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.428571429;
+            border-radius: 15px;
+        }
+        .btn-circle.btn-lg {
+            width: 50px;
+            height: 50px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            border-radius: 25px;
+        }
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            font-size: 24px;
+            line-height: 1.33;
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <ul>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+        <li>飞科工作室</li>
+    </ul>
+</div>
+<button type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
+<button type="button" class="btn btn-primary btn-circle"><i class="glyphicon glyphicon-list"></i></button>
+<button type="button" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button>
+<button type="button" class="btn btn-info btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
+<button type="button" class="btn btn-warning btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
+<button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-heart"></i></button>
+
+<h2>lg</h2>
+<button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>
+<button type="button" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-list"></i></button>
+<button type="button" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-link"></i></button>
+<button type="button" class="btn btn-info btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>
+<button type="button" class="btn btn-warning btn-circle btn-lg"><i class="glyphicon glyphicon-remove"></i></button>
+<button type="button" class="btn btn-danger btn-circle btn-lg"><i class="glyphicon glyphicon-heart"></i></button>
+
+<h2>xl</h2>
+<button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-ok"></i></button>
+<button type="button" class="btn btn-primary btn-circle btn-xl"><i class="glyphicon glyphicon-list"></i></button>
+<button type="button" class="btn btn-success btn-circle btn-xl"><i class="glyphicon glyphicon-link"></i></button>
+<button type="button" class="btn btn-info btn-circle btn-xl"><i class="glyphicon glyphicon-ok"></i></button>
+<button type="button" class="btn btn-warning btn-circle btn-xl"><i class="glyphicon glyphicon-remove"></i></button>
+<button type="button" class="btn btn-danger btn-circle btn-xl"><i class="glyphicon glyphicon-heart"></i></button>
+
+
+</body>
+</html>
+<div class="side">
+    <span><a href="www.iosqr.com"><img src="image/8_03.png" class=""></a></span>
+</div>
+<script src="bootstrap/dist/js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".side span").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})
+        });
+    });
+</script>
+</body>
+</html>

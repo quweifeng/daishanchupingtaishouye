@@ -1,0 +1,72 @@
+js 实现注册上一步，下一步方法
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题文档</title>
+    <script language="javascript">
+        function step1()
+        {
+            document.getElementById('step_1').style.display='none';
+            document.getElementById('step_2').style.display='block';
+        }
+        function step2()
+        {
+            document.getElementById('step_2').style.display='none';
+            document.getElementById('step_3').style.display='block';
+        }
+        function up2()
+        {
+            document.getElementById('step_1').style.display='block';
+            document.getElementById('step_2').style.display='none';
+        }
+        function up3()
+        {
+            document.getElementById('step_2').style.display='block';
+            document.getElementById('step_3').style.display='none';
+        }
+    </script>
+</head>
+
+<body>
+<table width="691" border="0" cellpadding="1" cellspacing="1" id="step_1">
+    <tr>
+        <td height="20" bgcolor="#99CC00"> </td>
+        <td bgcolor="#99CC00"> </td>
+        <td bgcolor="#99CC00"> </td>
+    </tr>
+
+    <tr>
+        <td height="20"> </td>
+        <td><a href="#" onclick="javascript:step1()">下一步</a></td>
+        <td> </td>
+    </tr>
+</table>
+<table  id="step_2" style="display:none;">
+    <tr>
+        <td width="6" height="20" bgcolor="#000000"> </td>
+        <td width="137" bgcolor="#000000"> </td>
+        <td width="564" bgcolor="#000000"> </td>
+    </tr>
+    <tr>
+
+        <td height="20"> </td>
+        <td><a href="#" onclick="javascript:step2()">下一步</a> | <a href="#" onclick="javascript:up2()">上一步</a></td>
+        <td> </td>
+    </tr>
+</table>
+<table id="step_3"  style="display:none;">
+    <tr>
+        <td width="6" height="20" bgcolor="#999900"> </td>
+        <td width="136" bgcolor="#999900"> </td>
+        <td width="534" bgcolor="#999900"> </td>
+    </tr>
+    <tr>
+        <td height="20"> </td>
+        <td>注册 <a href="#" onclick="javascript:up3()">上一步</a></td>
+        <td> </td>
+    </tr>
+</table>
+</body>
+</html>

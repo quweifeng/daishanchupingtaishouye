@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体";
+}
+#content-xieyi{
+    margin: 20px 5px 10px 5px;
+}
+#xieyi-bt h4{
+    font-size: 15px;
+    color: #bb000d;
+}
+#xieyi-bt{
+    background-color: #f6f6f6;
+}
+.xieyi-nr{
+    margin: 10px auto;
+}
+.xieyi-nr span{
+    font-size: 10px;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #content-xieyi{
+        margin: 20px 30px;
+    }
+    #xieyi-bt h4{
+        font-size: 16px;
+        color: #bb000d;
+    }
+    #xieyi-bt{
+        background-color: #f6f6f6;
+    }
+    .xieyi-nr span{
+        font-size: 16px;
+    }
+    .xieyi-nr{
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width:1024px){
+    #content-xieyi{
+        margin: 30px 30px;
+    }
+    #xieyi-bt h4{
+        font-size: 20px;
+        color: #bb000d;
+    }
+    #xieyi-bt{
+        background-color: #f6f6f6;
+    }
+    .xieyi-nr{
+        margin: 20px auto;
+    }
+    .xieyi-nr span{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,467 @@
+{include file="theme1/header" /}
+<link rel="stylesheet" href="/css/myziliao.css">
+<!--导航的结束-->
+<!--内容开始-->
+<div id="content">
+    <div class="container" id="content-nr">
+        <div class="row">
+
+    {include file="theme1/sidebar" /}
+            <div class="col-md-10  content-zy ">
+                <div class="row" id="content-fwl">
+                    <div class="col-md-3 col-xs-6 col-sm-3 content-fwl" >
+                        <p><!--<i class="glyphicon glyphicon-time"></i>&nbsp;-->0</p>
+                        <p style="font-size: 16px"> 扫码量&nbsp;<small style="font-size: 12px">(今日)</small></p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-3 content-fwl" >
+                        <p><!--<i class="glyphicon glyphicon-time"></i>&nbsp;-->0</p>
+                        <p style="font-size: 16px"> 用户数&nbsp;<small style="font-size: 12px">(今日)</small></p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-3 content-fwl" >
+                        <p><!--<i class="glyphicon glyphicon-time"></i>&nbsp;-->0</p>
+                        <p style="font-size: 16px"> 订单数 &nbsp;<small style="font-size: 12px">(今日)</small></p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-sm-3 content-fwl" >
+                        <p><!--<i class="glyphicon glyphicon-time"></i>&nbsp;-->0</p>
+                        <p style="font-size: 16px">  成交额&nbsp;<small style="font-size: 12px">(今日)</small></p>
+                    </div>
+                </div>
+               <!-- <div class="text-center content-rz "  >
+                    {if $idc->id_code}
+                        {if $validation_status  == '已实名认证'}
+                            <a  class="btn btn-default" style="color: green; font-weight: bold">
+                        {else /}
+                            <a  class="btn btn-danger" style="color: #fff; font-weight: bold">
+                        {/if}
+                            <span class="glyphicon glyphicon-ok"></span>&nbsp;{$validation_status}
+                        </a>
+                    {else /}
+                        <a href="/index/extra/index" class="btn btn-default " style="color: red; font-weight: bold"><span class="glyphicon glyphicon-remove"></span>&nbsp;未实名认证</a>
+                    {/if}
+                </div>-->
+                <div class="text-center content-rz  " style="margin-top: 20px ;padding: 5px 10px;" >
+                    <!--<a href="#" class="btn btn-default " style="color: red; font-weight: bold"><span class="glyphicon glyphicon-remove"></span>&nbsp;未实名认证</a>--><!--未实名-->
+                    <!--<a  class="btn btn-default" style="color: green; font-weight: bold"><span class="glyphicon glyphicon-ok"></span>&nbsp;已实名认证</a>--><!--已实名-->
+                    <div class="row thumbnail content-rz-cu">
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="image/cuohao.png" class="img-responsive img-circle content-rz-img  "><span class="content-rz-sp">未实名</span></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="content-rz-hg">
+                                <span>企业进行实名认证后，才能生成具有全球统一标识的国际/国家标准二维码</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3"><a href="#" class="pull-right content-rz-hg">>>去认证</a></div>
+                    </div>
+                    <div class="row thumbnail content-rz-dui">
+                        <div class="col-md-8 col-sm-8 col-xs-8"><img src="image/duihao.png" class="img-responsive img-circle content-rz-img " ><span class="content-rz-sp">已实名&nbsp;&nbsp;&nbsp;&nbsp;<span>天天讯北京科技有限公司京科技京科技京科科技京科科技京科科</span></span></div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <div class="content-rz-hg">
+                                <span>有问题请联系客服</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><a href="#" class="pull-right content-rz-hg" >>>去生码</a></div>
+                    </div>
+                </div>
+                <div class="" style="font-size: 14px;margin-bottom: 30px;">
+                    {if $validation_status  == '已实名认证'}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>码数总计&nbsp;:&nbsp;<span>{$code_count}</span>个</span>
+                    </div>
+                    {else /}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>码数总计&nbsp;:&nbsp;<span>0</span>个</span>
+                    </div>
+                    {/if}
+                    {if $validation_status  == '已实名认证'}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>正在使用&nbsp;:&nbsp;<span>{$user_code_can}</span>个</span>
+                    </div>
+                    {else /}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>正在使用&nbsp;:&nbsp;<span>0</span>个</span>
+                    </div>
+                    {/if}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>30天到期&nbsp;:&nbsp;<span>0</span>个</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>已经过期&nbsp;:&nbsp;<span>0</span>个</span>
+                    </div>
+                    {if $validation_status  == '已实名认证'}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>剩余数量&nbsp;:&nbsp;<span>{$profile.product_code | default=0}</span>个</span>
+                    </div>
+                    {else /}
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <span>剩余数量&nbsp;:&nbsp;<span>0</span>个</span>
+                    </div>
+                    {/if}
+                    <div class="col-md-2 col-sm-4 col-xs-6">&nbsp;</div>
+                </div>
+                <div class="content-sy">
+                   <!--  <h4>
+                        {if $validation_status  == '已实名认证'}
+                        <span class="label label-default" style="margin-left:10px;">全部‌·{$code_count}个</span>
+                        {else /}
+                        <span class="label label-default" style="margin-left:10px;">全部‌·0个</span>
+                        {/if}
+                        <span class="label label-success" style="margin-left:10px;">正常</span>
+                        {if $validation_status  == '已实名认证'}
+                        <span class="badge " style="background-color: #5cb85c;">{$user_code_can}个</span>
+                        {else /}
+                        <span class="badge " style="background-color: #5cb85c;">0个</span>
+                        {/if}
+                        <span class="label label-warning" style="margin-left:10px;">到期</span>
+                        <span class="badge " style="background-color: #f0ad4e;" >0个</span>
+                        <span class="label label-danger" style="margin-left:10px;">过期</span>
+                        <span class="badge " style="background-color: #d9534f;">0个</span>
+                        <span class="label label-info" style="margin-left:10px;">未使用</span>
+                        {if $validation_status  == '已实名认证'}
+                        <span class="badge " style="background-color: #5bc0de;">{$profile.product_code | default=0}个</span>
+                        {else /}
+                        <span class="badge " style="background-color: #5bc0de;">0个</span>
+                        {/if}
+                    </h4> -->
+                    <div style="margin-left: 10px;">
+                        <form class="form-inline" id="charge_form" action="/index/my/charge">
+                                <button class="btn btn-sm">申请数量</button>
+                                <div class="btn-group">
+                                    <select name="pay_number" id="select_pay_number" class="selectpicker form-cd" data-style="btn-primary" >
+                                       <option selected money="600.00" value="1">1</option>
+                                       <option money="4800.00" value="10">10</option>
+                                       <option money="6800.00" value="20">20</option>
+                                       <option money="8800.00" value="30">30</option>
+                                       <option money="9800.00" value="50">50</option>
+                                       <option money="12800.00" value="100">100</option>
+                                    </select>
+                                </div>
+                                <div class="btn-group">
+                                     <button class="btn btn-sm">应付金额</button>
+                                     <button class="btn btn-sm" style="border-left: 1px solid #cccccc;">&yen;<span id="real_pay">600.00</span></button>
+                                </div>
+                            <div class="btn-group">
+                                <select id="pay_type" name="pay_type" class="selectpicker form-cd" data-style="btn-primary">
+                                    <option value="0">选择支付方式</option>
+                                    <option value="1">微信支付</option>
+                                    <option value="2">支付宝支付</option>
+                                </select>
+                            </div>
+                            <input class="btn btn-sm btn-success" value="立即支付" type="submit">
+                            <div class="pull-right form-cb">
+                            <input type="hidden" id="ResultCode" value="{$ResultCode}">
+                            <input type="hidden" id="IsAudit" value="{$IsAudit}">
+                            <input type="hidden" id="product_code" value="{$profile.product_code}">
+                            
+                                <a href="#" class="btn btn-sm btn-success"><span id="make">在线制作</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="content-myqr" >
+                     <h4>我的二维码</h4>
+                    <div class="table table-responsive">
+                        <table class="table-responsive  table-hover">
+                            <thead style="background-color: #F4F5F9">
+                                   <tr>
+                                       <th class="content-myqr-zt" style="padding-left: 25px">名称</th>
+                                       <th class="content-myqr-sl visible-lg">数量</th>
+                                       <th class="content-myqr-zt hidden-xs">申请日期</th>
+                                       <th class="content-myqr-sl visible-lg">应付金额</th>
+                                       <th class="content-myqr-zt">付款状态</th>
+                                   </tr>
+                            </thead>
+                            <tbody>
+                                {if $validation_status  == '已实名认证'}
+
+                                    {volist name="mylist" id="vo"}
+                                   <tr>
+                                       <td class="content-myqr-zt"><input type="checkbox">{$vo.name}</td>
+                                       <td class="content-myqr-sl visible-lg">1个 </td>
+                                       <td class="content-myqr-zt hidden-xs">{$vo.created_time}</td>
+                                       <td class="content-myqr-sl visible-lg">¥{$vo.pay_money}</td>
+                                       {if $vo.pay_status eq 1}
+                                       <td class="content-myqr-zt"><span class="label label-warning">未支付</span>&nbsp;
+                                       <div style="float: right;margin-right: 10px;">
+                                       <span style="cursor: pointer;" class="pay" value="{$vo.id}">去支付</span><a href="/index/my/delete?id={$vo.id}" style="margin-left: 10px;">删除</a>
+                                       </div>
+                                       </td>
+                                       {else /}
+                                       <td class="content-myqr-zt"><span class="label label-success">已支付</span>&nbsp;
+                                           <div style="float: right;margin-right: 10px;">
+                                               <a href="/index/my/download?id={$vo.id}">下载</a><a href="/index/my/edit?id={$vo.id}" style="margin-left: 5px;">编辑</a><span style="margin-left: 5px;">完成</span>
+                                           </div>
+                                       </td>
+                                       {/if}
+                                   </tr>
+                                   {/volist}
+                                   {/if}
+                            </tbody>
+                        <!-- 删除按钮-->
+                        <tbody>
+                        <tr>
+                            <td class="content-myqr-zt">
+                                <input type="checkbox">
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="right" title="未支付删除">删除</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        {if $validation_status  == '已实名认证'}
+                        <nav class="">
+                            <ul class="pagination pull-right ">
+                                 
+                                 {$page}
+
+                            </ul>
+                        </nav>
+                        {/if}
+                    </div>
+                </div>
+                <div class="content-myqr" >
+                    <h4>二维码使用情况</h4>
+                  <!--  <div class="pull-right content-myqr-right">
+                        <div class="btn-group pull-right">
+                            <a href="/index/my/mylist?type=4">
+                                <button class="btn btn-default btn-style">&nbsp;&nbsp;所有&nbsp;&nbsp;&nbsp;</button>
+                            </a>
+                            <a href="/index/my/mylist?type=4&status=1">
+                            <button class="btn btn-default btn-style">&nbsp;&nbsp;过期&nbsp;&nbsp;&nbsp;</button>
+                            </a>
+                            <a href="/index/my/mylist?type=4&status=2">
+                            <button class="btn btn-default btn-style">&nbsp;&nbsp;到期&nbsp;&nbsp;&nbsp;</button>
+                            </a>
+                        </div>
+                        <div class="input-group content-myqr-sou pull-left">
+                            <form action="" name="" method="get">
+                            <input style="width: 100px;" type="text" name="keyword4" class="form-control input-sm" placeholder="输入证件名称..">
+                            <button style="width: 50px; height: 30px;" class="input-group-addon btn btn-primary">搜索</button>
+                            </form>
+                        </div>
+                    </div>-->
+                    <div class="con-search form-inline text-center hidden-xs" style="margin-right: 20px">
+                        <form action="" name="" method="get">
+                            <input class="form-control" type="text" name="keyword4"  placeholder="输入关键词"/>
+                            <button class="btn btn-default " type="submit">搜索</button>
+                            <div class="pull-right">
+                                <div class="pull-right btn-group">
+                                    <button type="button" class="btn btn-sm btn-default"><a href="/index/my/mylist?type=4" style="text-decoration: none;font-size: 14px;color: #333333">所有</a></button>
+                                    <button type="button" class="btn  btn-sm btn-default"><a href="/index/my/mylist?type=4&status=1" style="text-decoration: none;font-size: 14px;color: #333333">过期</a></button>
+                                    <button type="button" class="btn btn-sm btn-default"><a href="/index/my/mylist?type=4&status=2" style="text-decoration: none;font-size: 14px;color: #333333">到期</a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="table table-responsive">
+                        <table class="table-responsive  table-hover">
+                            <thead style="background-color: #F4F5F9">
+                            <tr>
+                                <th class="content-myqr-zt" style="padding-left: 15px">二维码编码</th>
+                                <th class="content-myqr-sl visible-lg">产品名称</th>
+                                <th class="content-myqr-sl visible-lg">生成时间</th>
+                                <th class="content-myqr-zt hidden-xs">到期时间</th>
+                                <th class="content-myqr-zt">扫码次数</th>
+                                <th class="content-myqr-zt">操作</th>
+                            </tr>
+                            </thead>
+                            {if $validation_status  == '已实名认证'}
+                            <tbody>
+                            {volist name="use_list" id="vo"}
+                            <tr>
+                                <td class="content-myqr-zt"><input type="checkbox">{$vo.iocode}</td>
+                                <td class="content-myqr-sl visible-lg">{$vo.name}</td>
+                                <td class="content-myqr-sl visible-lg">{$vo.created_time}</td>
+                                <td class="content-myqr-zt hidden-xs">
+                                    <span class="bg-danger">{$vo.end_time}</span>
+                                </td>
+                                <td class="content-myqr-sl">{$vo.scan_num}</td>
+                                <td class="content-myqr-zt">
+                                    <a href="/index/code/product?id={$vo.idCode}" target="_blank"><button class="btn btn-sm btn-info">预览</button></a>
+                                    <a href="/index/my/edit?id={$vo.id}"><button class="btn btn-sm btn-primary">编辑</button></a>
+
+                                    {if $vo.a_status == 1}
+                                        <a href="/index/my/update?id={$vo.id}&status=2">
+                                            <button class="btn btn-sm btn-success">关闭</button>
+                                        </a>
+                                    {else /}
+                                        <a href="/index/my/update?id={$vo.id}&status=1">
+                                            <button class="btn btn-sm btn-success">开启</button>
+                                        </a>
+                                    {/if}
+                                    
+                                </td>
+                            </tr>
+                            {/volist}
+                           </tbody>
+                           {/if}
+             <!-- 删除按钮--><tbody>
+                                  <tr>
+                                      <td class="content-myqr-zt"><input type="checkbox"><button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="right" title="续费" >续费</button></td>
+                                      <td class="content-myqr-zt"><input type="checkbox"><button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="right" title="开启" >开启</button></td>
+                                      <td class="content-myqr-zt"><input type="checkbox">
+                                          <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="right" title="关闭">关闭</button>
+                                      </td>
+                                  </tr>
+
+                            </tbody>
+                        </table>
+                        {if $validation_status  == '已实名认证'}
+                        <div class="pull-right">{$pageuse}</div>
+                        {/if}
+                    </div>
+                </div>
+                <div class="content-myqr" >
+                    <h4>二维码扫描排行榜</h4>
+                    <div class="con-search form-inline text-center hidden-xs" style="margin-right: 30px">
+                        <form action="" name="" method="get">
+                            <input class="form-control" type="text" name="keyword2"  placeholder="输入关键词"/>
+                            <button class="btn btn-default " type="submit">搜索</button>
+                            <div class="pull-right">
+                                <div class="pull-right btn-group">
+                                    <button type="button" class="btn  btn-sm btn-default"><a href="/index/my/mylist?type=2&order2=scan_num desc" style="text-decoration: none;font-size: 14px;color: #333333">高到低</a></button>
+                                    <button type="button" class="btn btn-sm btn-default"><a href="/index/my/mylist?type=2&order2=scan_num asc" style="text-decoration: none;font-size: 14px;color: #333333">低到高</a></button>
+                                    <button type="button" class="btn btn-sm btn-default"><a href="/index/my/mylist?type=2&dis=end" style="text-decoration: none;font-size: 14px;color: #333333">过期榜</a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--<div class="pull-right content-myqr-right">
+                        <div class="btn-group pull-right">
+                            <button class="btn btn-default btn-style"><a href="/index/my/mylist?type=2&order2=scan_num desc">高到低</a>&darr;</button>
+                            <button class="btn btn-default btn-style"><a href="/index/my/mylist?type=2&order2=scan_num asc">低到高</a>&uarr;</button>
+                            <button class="btn btn-default btn-style"><a href="/index/my/mylist?type=2&dis=end">过期榜</a>&darr;</button>
+                        </div>
+                        <div class="input-group content-myqr-sou pull-left">
+                            <form action="" name="" method="get">
+                            <input type="text" style="width:100px;"  name="keyword2" class="form-control input-sm " placeholder="输入证件名称..">
+    <button class="input-group-addon btn btn-primary" style="width: 50px; height: 30px;">搜索</button>
+&lt;!&ndash;                             <input type="submit"  value="">
+ &ndash;&gt;
+                        </div>
+
+                    </div>-->
+                    <div class="table table-responsive">
+                        <table class="table-responsive  table-hover">
+                            <thead style="background-color: #F4F5F9">
+                            <tr>
+                                <th class="content-myqr-mc" >产品名称</th>
+                                <th class="content-myqr-ph">到期时间</th>
+                                <th class="content-myqr-ph" >扫描次数</th>
+                                <th class="content-myqr-ph hidden-xs">最多区域</th>
+                            </tr>
+                            </thead>
+                            {if $validation_status  == '已实名认证'}
+                            <tbody>
+                            {volist name="first" id="vo"}
+
+                            <tr>
+                                <td class="content-myqr-mc">
+                                    <a href="#" >{$vo.name}</a><br/>
+                                    <span><i>{$vo.iocode}</i></span>
+                                </td>
+                                <td class="content-myqr-ph">{$vo.end_time}</td>
+                                <td class="content-myqr-ph">{$vo.scan_num}</td>
+                                <td class="content-myqr-ph hidden-xs">
+                                    {$vo.pay_status}
+<!--                                     <a href="#">
+                                        <span class="label" style="background-color: #333333;">查看详情</span>
+                                    </a> -->
+                                </td>
+                            </tr>
+
+                            {/volist}
+                            </tbody>
+                            {/if}
+                        </table>
+                        {if $validation_status  == '已实名认证'}
+                        <nav class="">
+                            {$page2}
+                        </nav>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容结束-->
+<!--底部开始-->
+<div id="footer">
+    <div class="container ">
+        <div class="footer-shang">
+            <ul>
+                <li><a href="#"><img src="/image/lonngg.png" class="img-responsive"></a></li>
+                <li><a href="#">IDcode&nbsp;(&nbsp;全球标识&nbsp;)</a></li>
+                <li><a href="#">TDcode&nbsp;(&nbsp;全球编码&nbsp;)</a></li>
+            </ul>
+        </div>
+        <div class="footer-xia ">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li>|</li>
+                <li><a href="#">平台公告</a></li>
+                <li>|</li>
+                <li><a href="#">服务协议</a></li>
+                <li>|</li>
+                <li><a href="#">客服中心</a></li>
+                <li>|</li>
+                <li><a href="#">Copyright&nbsp;&copy;&nbsp;2012-2017二维码注册认证平台.All Rights Reserved</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--引入jquery务必在bootstrap.min.js之前-->
+<script src="/bootstrap/dist/js/jquery.min.js"></script>
+<!--最新的bootstrap核心javascript文件-->
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+        $(function () {
+             $('#charge_form').submit(function(){
+                if ($('#pay_type').val() == 0) {
+                    alert('请选择支付方式')
+                    return false;
+                }
+             })
+
+
+             $('#select_pay_number').change(function(){
+                var pay = $("#select_pay_number").find("option:selected").attr('money');
+                $('#real_pay').html(pay);
+            })
+
+             $('#make').click(function(){
+                var ResultCode = $("#ResultCode").val();
+                var IsAudit = $("#IsAudit").val();
+                var product_code = $("#product_code").val();
+                if(ResultCode == 1){
+                    if(IsAudit == -1){
+                        alert('抱歉，提交资料有误，审核不通过');
+                        window.location.href="/index/extra/index";
+                    }else if(IsAudit == 100){
+                        if(product_code > 0){
+                            window.location.href="/index/product/addstep1";
+                        }else{
+                            alert('你没有可用的二维码,请先购买');
+                        }
+                        
+                    }else{
+                        alert('等待认证审核');
+                    }
+                    
+                }else{
+                    alert('未实名认证,请先实名认证');
+                    window.location.href="/index/extra/index";
+                }
+             })
+
+             $('.pay').click(function(){
+                var value = $(this).attr('value');
+                $('#alipay_url').attr('href', '/index/my/payAli?id=' + value)
+                $('#wechat_url').attr('href', '/index/my/pay?id=' + value)
+                $('#modal-pay').modal();
+                return false;
+            })
+        });
+</script>
+</body>
+</html>

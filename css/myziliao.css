@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","黑体",Arial,sans-serif;
+}
+.con-xz{
+    margin: 30px 0px 30px 20px;
+}
+.con-xz h5{
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: 500;
+}
+.xinz-xian{
+    border: 1px solid #cccccc;
+}
+.con-gk{
+    background-color: #F4F5F9;
+    padding: 8px 0px;
+    padding-left: 30px;
+    margin-top: 20px;
+    border: 1px solid #cccccc ;
+}
+.con-gk span{
+    font-size: 14px;
+}
+.con-gkxx{
+    line-height: 30px;
+}
+.con-gkxx a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #459ae9;
+}
+.con-xx{
+    border: none;
+    width: 99%;
+}
+.con-qy{
+    line-height: 40px;
+}
+.con-qy a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #459ae9;
+}
+.con-mm{
+    width: 99%;
+}
+.con-aniu{
+    margin-bottom: 15px;
+}
+.jibie{
+    font-size: 14px;
+    font-weight: bold;
+}
+.con-shengsm{
+    width: 80%;
+}
+.con-hz{
+    margin-bottom: 15px;
+}
+.con-search{
+    margin: 10px auto;
+    margin-right: 0px;
+}
+.con-search input{
+    width: 140px;
+}
+/*用户评价页面*/
+.con-pj-hg a{
+    line-height: 25px;
+}
+.con-pj-hg span{
+    line-height: 25px;
+}
+.con-pj-kd{
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.con-pj-zf span{
+    line-height: 40px;
+}
+.con-pj-zf a{
+    line-height: 40px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .con-xz{
+        margin: 30px 0px 30px 20px;
+    }
+    .con-xz h5{
+        font-size: 16px;
+        color: #3c3c3c;
+        font-weight: 500;
+    }
+    .xinz-xian{
+        border: 1px solid #cccccc;
+    }
+    .con-gk{
+        background-color: #F4F5F9;
+        padding: 8px 0px;
+        padding-left: 30px;
+        margin-top: 20px;
+        border: 1px solid #cccccc ;
+    }
+    .con-gk span{
+        font-size: 14px;
+    }
+    .con-gkxx{
+        line-height: 30px;
+    }
+    .con-gkxx a{
+        text-decoration: none;
+        font-size: 14px;
+        color: #459ae9;
+    }
+    .con-xx{
+        border: none;
+        width: 80%;
+    }
+    .con-qy{
+        line-height: 40px;
+    }
+    .con-qy a{
+        text-decoration: none;
+        font-size: 14px;
+        color: #459ae9;
+    }
+    .con-mm{
+        width: 80%;
+    }
+    .con-aniu{
+        margin-bottom: 20px;
+    }
+    .jibie{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .con-shengsm{
+        width: 80%;
+    }
+    .con-hz{
+        margin-bottom: 20px;
+    }
+    .con-search{
+        margin: 10px auto;
+        margin-right: 40px;
+    }
+    .con-search input{
+        width: 140px;
+    }
+    /*用户评价页面*/
+    .con-pj-hg a{
+        line-height: 25px;
+    }
+    .con-pj-hg span{
+        line-height: 25px;
+    }
+    .con-pj-kd{
+        width: 120px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .con-pj-zf span{
+        line-height: 40px;
+    }
+    .con-pj-zf a{
+        line-height: 40px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .con-xz{
+        margin: 30px 0px 30px 20px;
+    }
+    .con-xz h5{
+        font-size: 16px;
+        color: #3c3c3c;
+        font-weight: 500;
+    }
+    .xinz-xian{
+        border: 1px solid #cccccc;
+    }
+    .con-gk{
+        background-color: #F4F5F9;
+        padding: 8px 0px;
+        padding-left: 30px;
+        margin-top: 20px;
+        border: 1px solid #cccccc ;
+    }
+    .con-gk span{
+        font-size: 14px;
+    }
+    .con-gkxx{
+        line-height: 30px;
+    }
+    .con-gkxx a{
+        text-decoration: none;
+        font-size: 14px;
+        color: #459ae9;
+    }
+    .con-xx{
+      border: none;
+      width: 80%;
+    }
+    .con-qy{
+        line-height: 40px;
+    }
+    .con-qy a{
+        text-decoration: none;
+        font-size: 14px;
+        color: #459ae9;
+    }
+    .con-mm{
+        width: 80%;
+    }
+    .con-aniu{
+        margin-bottom: 20px;
+    }
+    .jibie{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .con-shengsm{
+        width: 80%;
+    }
+    .con-hz{
+        margin-bottom: 20px;
+    }
+    .con-search{
+        margin: 10px auto;
+        margin-right: 40px;
+    }
+    .con-search input{
+        width: 140px;
+    }
+    /*用户评价页面*/
+    .con-pj-hg a{
+        line-height: 25px;
+    }
+    .con-pj-hg span{
+        line-height: 25px;
+    }
+    .con-pj-zf span{
+        line-height: 40px;
+    }
+    .con-pj-zf a{
+        line-height: 40px;
+    }
+    .con-pj-kd{
+        width: 160px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

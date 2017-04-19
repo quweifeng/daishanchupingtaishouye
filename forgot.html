@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device,initial-scale=1 maximum-scale=1">
+    <meta name="description" itemprop="description" content="二维码注册认证平台是在中国二维码注册认证中心的指导下，由中国电子商会和中国质量认证中心联合发起成立中国第三方二维码注册认证平台。面向国际国内企业、机构及商户提供二维码注册、认证、制作和统一编码、发放、验证等二维码应用服务。可实现各行业企业的信息展示二维码、产品二维码、溯源二维码、防伪二维码、网站二维码、支付二维码等展示营销服务，并提供各行业企业示范试点认证通道，打通企业品牌与产品品质的双飞跃。" />
+    <meta name="keywords" itemprop="keywords" content="二维码,二维码注册认证平台,二维码认证,二维码解决方案,二维码应用平台,二维码实名认证,二维码企业,二维码申请注册中心,商品二维码,二维条码,二维码注册认证中心,企业二维码,公司二维码,产品二维码,防伪二维码申请,二维码申请,二维码办理,防伪二维码,溯源二维码,二维码制作,2维码,二维码生成器,二维码注册,生成二维码,二维码识别,二维码防伪,二维码生成,扫描二维码,二维码扫描器,二维码追溯,手机二维码,二维码扫描,二维码名片,二维码平台,二维码软件,二维码应用,二维码查询,二维码营销平台,二维码注册认证,二维码注册平台,视频二维码,二维码注册中心,二维码价格,二维码机构" />
+    <title>二维码注册认证平台</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/forget.css">
+    <style type="text/css">
+        .checkCode {
+            border-radius:1px;
+            cursor: pointer;
+            border: 1px solid #c0c0c0;
+            margin-right:-1px;
+            line-height: 26px;
+            width: 100px;
+            height: 33px;
+        }
+    </style>
+</head>
+<body>
+<!--头部开始-->
+<div id="header">
+    <!--导航开始-->
+    <nav class=" navbar navbar-default head-v3"   role="navigation">
+        <div class="container navigation-up">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header">
+                    <span class="sr-only">导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <div class="row">
+                        <div class="navbar-brand-img col-sm-6   col-xs-8 col-md-7 col-lg-7">
+                            <a class="branding" href="/"><img src="image/logop1.png" alt="logo" class="img-responsive "></a>
+                        </div>
+                        <div class="navbar-brand-zc  col-sm-4   col-xs-10 col-md-4 col-lg-4">
+                            <a href="forgot.html" class="navbar-brand ">忘记密码</a>
+                            <a href="register.html" class="navbar-brand visible-xs ">注册</a>
+                            <a href="index.html" class="navbar-brand visible-xs ">登录</a>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="navigation-inner">
+                <div class=" collapse navbar-collapse navigation-v3" id="navbar-header">
+                    <ul class="nav navbar-nav navbar-right hidden-xs " id="header-top">
+                        <li><a href="register.html">注册</a></li>
+                        <li><a href="index.html">登录</a></li>
+                        <!--<li><a href="#">帮助与文档</a></li>
+                        <li><a href="#">论坛</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-down">
+            <div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
+                <div class="navigation-down-inner">
+                    <dl style="margin-left: 100px;">
+                        <dt>计算机与网络</dt>
+                        <dd><a hotrep="hp.header.product.compute1" href="#">云服务器</a></dd>
+                        <dd><a hotrep="hp.header.product.compute2" href="#">弹性Web引擎</a></dd>
+                        <dd><a hotrep="hp.header.product.compute3" href="#">负载均衡</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>存储与CDN</dt>
+                        <dd><a hotrep="hp.header.product.storage1" href="#">云数据库</a></dd>
+                        <dd><a hotrep="hp.header.product.storage2" href="#">NoSQL高速存储</a></dd>
+                        <dd><a hotrep="hp.header.product.storage4" href="#">对象存储服务(beta)</a></dd>
+                        <dd><a hotrep="hp.header.product.storage3" href="#">CDN</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>监控与安全</dt>
+                        <dd><a hotrep="hp.header.product.monitoring1" href="#">云监控</a></dd>
+                        <dd><a hotrep="hp.header.product.monitoring2" href="#">云安全</a></dd>
+                        <dd><a hotrep="hp.header.product.monitoring3" href="#">云拨测</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>数据分析</dt>
+                        <dd><a hotrep="hp.header.product.analysis1" href="#">腾讯云分析</a></dd>
+                        <dd><a hotrep="hp.header.product.analysis2" href="#">关键因子</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>开发者工具</dt>
+                        <dd><a hotrep="hp.header.product.devtool1" href="#">移动加速</a></dd>
+                        <dd><a hotrep="hp.header.product.devtool2" href="#">应用加固</a></dd>
+                        <dd><a hotrep="hp.header.product.devtool3" href="#">信鸽推送</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>开发者服务</dt>
+                        <dd><a hotrep="hp.header.product.service1" href="#">安全认证服务</a></dd>
+                        <dd><a hotrep="hp.header.product.service2" href="#">域名备案</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="solution" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="solution">
+                <div class="navigation-down-inner">
+                    <dl style="margin-left: 380px;"><dd><a class="link" hotrep="hp.header.solution.1" href="#">微信</a></dd></dl>
+                    <dl><dd><a class="link" hotrep="hp.header.solution.2" href="#">游戏</a></dd></dl>
+                    <dl><dd><a class="link" hotrep="hp.header.solution.3" href="#">移动应用</a></dd></dl>
+                </div>
+            </div>
+            <div id="support" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="support">
+                <div class="navigation-down-inner">
+                    <dl style="margin-left: 610px;"><dd><a class="link" hotrep="hp.header.support.1" href="#">资料库</a></dd></dl>
+                    <dl><dd><a class="link" hotrep="hp.header.support.2" href="#">论坛</a></dd></dl>
+                    <dl><dd><a class="link" hotrep="hp.header.support.3" href="#">亿元扶持</a></dd></dl>
+                </div>
+            </div>
+            <div id="cooperate" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="cooperate">
+                <div class="navigation-down-inner">
+                    <dl style="margin-left: 480px;"><dd><a hotrep="hp.header.partner.1" href="#">代理商</a></dd></dl>
+                    <dl><dd><a hotrep="hp.header.partner.2" href="#">微信服务商</a></dd></dl>
+                    <dl><dd><a hotrep="hp.header.partner.3" href="#">创投机构</a></dd></dl>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--导航结束-->
+</div>
+<!--头部结束-->
+<!--内容部分开始-->
+<div id="content">
+    <div class="container">
+        <div class="form-ts">
+            <p><span class="glyphicon glyphicon-info-sign "></span>请输入您的账户名</p>
+        </div>
+        <form role="form" class="form-horizontal form-forget col-xs-12" action="chongzhi.html" method="post">
+            <div class="form-group form-jianju">
+                <label for="phone" class="control-label col-md-4 col-xs-4  form-lm">用户名</label>
+                <input type="text" class="form-control col-md-8 col-xs-8 form-km" id="phone" placeholder="请输入注册的手机号">
+            </div>
+            <div class="form-group form-jianju">
+                <label class="control-label col-md-4 col-xs-4 form-lm"  >验证码</label>
+                <input type="text" class="form-control col-md-6 col-xs-4 form-km-yzm"  placeholder="验证码">
+                <input class="checkCode col-md-2 col-xs-2" type="button" id="btn" value="获取" />
+            </div>
+            <div class="form-group-jz form-jianju ">
+                <span class="col-md-4  col-xs-12 "></span>
+                <button type="submit" class="btn btn-info ">提交</button>
+                <small>(如有疑问，请联系客服40086-91258)</small>
+            </div>
+        </form>
+    </div>
+</div>
+<!--内容部分结束-->
+<!--底部菜单开始-->
+<div class="container footer-beian">
+    <span>二维码注册认证平台&nbsp;Copyright © 2017 二维码申请办理中心 京ICP备12047040号  www.iosqr.com <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000344928'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1000344928%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></span>
+</div>
+<!--底部菜单结束-->
+<!--引入jquery务必在bootstrap.min.js之前-->
+<script src="bootstrap/dist/js/jquery.min.js"></script>
+<!--最新的bootstrap核心javascript文件-->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var sleep = 60, interval = null;
+    window.onload = function ()
+    {
+        var btn = document.getElementById ('btn');
+        btn.onclick = function ()
+        {
+            if (!interval)
+            {
+                this.style.backgroundColor = 'rgb(192,192,192)';
+                this.disabled = "disabled";
+                this.style.cursor = "wait";
+                this.value = "重新发送 (" + sleep-- + ")";
+                interval = setInterval (function ()
+                {
+                    if (sleep == 0)
+                    {
+                        if (!!interval)
+                        {
+                            clearInterval (interval);
+                            interval = null;
+                            sleep = 60;
+                            btn.style.cursor = "pointer";
+                            btn.removeAttribute ('disabled');
+                            btn.value = "获取";
+                            btn.style.backgroundColor = '';
+                        }
+                        return false;
+                    }
+                    btn.value = "重新发送 (" + sleep-- + ")";
+                }, 1000);
+            }
+        }
+    }
+</script>
+</body>
+</html>

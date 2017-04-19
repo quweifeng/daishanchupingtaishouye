@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device,initial-scale=1 maximum-scale=1">
+    <meta name="description" itemprop="description" content="二维码注册认证平台是在中国二维码注册认证中心的指导下，由中国电子商会和中国质量认证中心联合发起成立中国第三方二维码注册认证平台。面向国际国内企业、机构及商户提供二维码注册、认证、制作和统一编码、发放、验证等二维码应用服务。可实现各行业企业的信息展示二维码、产品二维码、溯源二维码、防伪二维码、网站二维码、支付二维码等展示营销服务，并提供各行业企业示范试点认证通道，打通企业品牌与产品品质的双飞跃。" />
+    <meta name="keywords" itemprop="keywords" content="二维码,二维码注册认证平台,二维码认证,二维码解决方案,二维码应用平台,二维码实名认证,二维码企业,二维码申请注册中心,商品二维码,二维条码,二维码注册认证中心,企业二维码,公司二维码,产品二维码,防伪二维码申请,二维码申请,二维码办理,防伪二维码,溯源二维码,二维码制作,2维码,二维码生成器,二维码注册,生成二维码,二维码识别,二维码防伪,二维码生成,扫描二维码,二维码扫描器,二维码追溯,手机二维码,二维码扫描,二维码名片,二维码平台,二维码软件,二维码应用,二维码查询,二维码营销平台,二维码注册认证,二维码注册平台,视频二维码,二维码注册中心,二维码价格,二维码机构" />
+    <title>二维码注册认证平台</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/web/css/chanpinma.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/font-awesome-ie7.min.css">
+</head>
+<body>
+<div class="side">
+    <span><a href="#"><img src="/web/image/8_03.png" class="img-responsive img-circle"></a></span>
+</div>
+<!--头部开始-->
+<div id="header">
+    <div class="row">
+        <div class="col-xs-4 col-sm-2 col-md-2">
+          {if condition="$code.logo"}
+          <img src="{$code.logo}" class="img-responsive">
+           {else /}
+           <img src="/web/image/shouji.png" class="img-responsive">
+           {/if}
+        </div>
+        <div class="col-xs-8 col-sm-10 col-md-8 header-wz">
+            <h4>{$code.advertisement}</h4>
+            <p>{$code.advertisement_summary}</p>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!--内容部分开始-->
+<div id="content">
+       <div class="text-center content-mz">
+           <p class="btn bg-success" style="background-color:#9cc73f; color: #f1f1f1">{$code.name}</p>
+       </div>
+        <div id="page-body">
+            <div class="content">
+                <ul class="image-slider">
+                    <li><span><img class="responsive-image" src="{$code.product_img}" alt="img"></span></li>
+                    <li><span><img class="responsive-image" src="{$code.product_img1}" alt="img"></span></li>
+                    <li><span><img class="responsive-image" src="{$code.product_img2}" alt="img"></span></li>
+                    <li><span><img class="responsive-image" src="{$code.product_img3}" alt="img"></span></li>
+                    <li><span><img class="responsive-image" src="{$code.product_img4}" alt="img"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div style="padding: 30px 20px 0px 20px">
+            <marquee  width=98% >
+                <img src="/web/image/volume.png" width="24" height="24"><a href="#" style="color: red;text-decoration: none; ">{$code.announcement}</a>
+            </marquee>
+        </div>
+        <div class="zhongzimc ">
+            <div class="zhongzimc-1"></div>
+            <div class="zhongzimc-2" ><p>Qr code registry seed law</p></div>
+            <div class="zhongzimc-4"><p>产品简介</p></div>
+            <div class="zhongzimc-tu">
+              {$code.introduction}
+            </div>
+       </div>
+        <div class="zhongzimc " id="chanpinxx">
+            <div class="zhongzimc-1"></div>
+            <div class="zhongzimc-2 chanpinxx" ><p>Qr code registry seed law</p></div>
+            <div class="zhongzimc-4" style="background-color: #ede9e9;" ><p>产品信息</p></div>
+            <div class="table-responsive zhongzimc-5 ">
+                <table class="table table-bordered" >
+                    <tbody>
+                        <tr>
+                            <td class="zhongzimc-jb"><span>产品名称</span></td>
+                            <td class="zhongzimc-qx"><span>{$code.name}</span></td>
+                        </tr>
+                         <tr>
+                             <td class="zhongzimc-jb" ><span>联系方式</span></td>
+                             <td class="zhongzimc-qx"><span>{$code.service_tel}</span></td>
+                         </tr>
+                         <tr>
+                             <td class="zhongzimc-jb"><span>品牌及规格</span></td>
+                             <td class="zhongzimc-qx"><span>{$code.brand}，{$code.spec}</span></td>
+                         </tr>
+                         <tr>
+                             <td class="zhongzimc-jb"><span>零售指导价</span></td>
+                             <td class="zhongzimc-qx"><span>¥{$code.price}</span></td>
+                         </tr>
+                         <tr>
+                             <td class="zhongzimc-jb"><span>产品产地</span></td>
+                             <td class="zhongzimc-qx"><span>{$code.address}</span></td>
+                         </tr>
+                         <tr>
+                             <td class="zhongzimc-jb"><span>生产企业</span></td>
+                             <td class="zhongzimc-qx"><span>{$code.manufacturing_enterprise}</span></td>
+                         </tr>
+                         <tr>
+                             <td class="zhongzimc-jb"><span>产品编码</span></td>
+                             <td class="zhongzimc-qx"><span>{$code.iocode}</span></td>
+                         </tr>
+                         <tr>
+                             <td class="zhongzimc-jb"><span>企业网址</span></td>
+                             <td class="zhongzimc-qx"><a>{$code.domain}</a></td>
+                         </tr>
+
+                    {foreach $extra_field as $vo}
+                                     <tr>
+                                         <td class="zhongzimc-jb"><span>{$vo->key}</span></td>
+                                         <td class="zhongzimc-qx"><a>{$vo->value}</a></td>
+                                     </tr>
+                    {/foreach}
+
+
+
+                    </tbody>
+                </table>
+            </div>
+      </div>
+        <div class="zhongzimc " id="chanpinzs">
+            <div class="zhongzimc-1"></div>
+            <div class="zhongzimc-2" ><p>Qr code registry The details show</p></div>
+            <div class="zhongzimc-4"><p>产品详情</p></div>
+            <div class="zhongzimc-img">
+                {$code.information}
+            </div>
+           {if condition="$code.is_pay"}
+            <div class="chanpin-lj">
+              <a href="#">立即购买</a>
+           </div>
+           {/if}
+            <div id="pinjia">
+                    <div class="pinjia-user">
+                        <p>用户评价</p>
+                        <form method="post" class="form-horizontal pinjia-k " role="form">
+                            <input type="hidden" name="user_code_id" value="{$user_code.id}">
+
+                            <textarea name="content" class="form-control" rows="5" style="border: 1px solid #9cc73f;" placeholder="写点什么呢？"></textarea>
+                            <div class="form-group pinjia-t ">
+                                <button type="submit" class="btn  btn-lg pinjia-a">提交</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pinjia-zuixin">
+                        <p>最新评论</p>
+                        {foreach $comment as $vo }
+                        <div class="row pinjia-zuixin-xx ">
+
+                            <div class="col-xs-3 col-sm-2 col-md-2 pinjia-zuixin-img">
+                                <img src="/web/image/renshishenfen.png" class="img-responsive img-circle" style="width: 50px;height: 50px">
+                            </div>
+                            
+                            <div class="col-xs-9 col-sm-10 col-md-10">
+                                <div class="row pinjia-sj">
+                                    <div class="col-xs-8 col-sm-9 col-md-9">
+                                        <p>用户:{$vo.country} {$vo.province} {$vo.city } {$vo.area}</p>
+                                        <p style="color:#999999;">{$vo.created_time} </p>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-3 col-md-3">
+                                        <p class="glyphicon glyphicon-thumbs-up"></p><span>(0)</span><br/>
+                                        <p class="glyphicon glyphicon-comment " ></p><span>(0)</span>
+                                    </div>
+                                </div>
+                                <div class="pinjia-nr">
+                                    <p>{$vo.content}</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        {/foreach}
+                    </div>
+                </div>
+       </div>
+        <div class="zhongzimc " id="zhongzimc-baoz">
+            <div class="">
+                <img src="image/kuang.png" class="img-responsive" style="width: 200px;height: 80px; margin: 15px auto;">
+            </div>
+        <div class="row" style="margin: 20px auto">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img src="/web/image/ren.png" class="img-circle img-responsive"  >
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img src="/web/image/fw1.png" class="img-circle img-responsive" >
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img src="/web/image/sh1.png" class="img-circle img-responsive" >
+            </div>
+        </div>
+    </div>
+        <div class="liuyan">
+            <p>给商家留言</p>
+            <form  action="" method="post" class="form-horizontal" role="form" id="liuyan">
+                <input type="hidden" name="user_id" value="{$user_code.user_id}">
+                <input type="hidden" name="user_id" value="{$user_code.user_id}">
+
+                 <div class="table-responsive">
+                     <table class="table table-bordered">
+                         <tbody>
+                              <tr>
+                                  <td class="liuyan-mc" ><p>称呼:</p></td>
+                                  <td><input name="contactName" type="text" class="form-control" placeholder=""></td>
+                              </tr>
+                              <tr>
+                                  <td class="liuyan-mc"><p>电话/微信/QQ:</p></td>
+                                  <td><input name="connect" type="text" class="form-control" placeholder=""></td>
+                              </tr>
+                              <tr>
+                                  <td class="liuyan-mc"><p>Email:</p></td>
+                                  <td><input name="contactEmail" type="email" class="form-control" placeholder=""></td>
+                              </tr>
+                              <tr>
+                                  <td class="liuyan-mc"><p>留言内容:</p></td>
+                                  <td><textarea name="contactMessage" class="form-control" rows="3"></textarea></td>
+                              </tr>
+                         </tbody>
+                     </table>
+                 </div>
+                 <div class="liuyan-ti">
+                     <button type="submit" class="form-group btn btn-lg " style="background-color: #9cc73f; color: #FFFFFF">提交</button>
+                 </div>
+            </form>
+        </div>
+        <div class="zhongzimc-xz">
+            <img src="/web/image/333.png" class="img-responsive">
+        </div>
+        <div class="xuxian"></div>
+        <div class="dizhi ">
+             <p><i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i>&nbsp;&nbsp;客服电话:&nbsp;&nbsp;{$code.service_tel}</p>
+             <p><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;地址:&nbsp;&nbsp;{$identify.register_address}</p>
+             <p><i class="glyphicon glyphicon-link" aria-hidden="true"></i>&nbsp;&nbsp;企业链接:&nbsp;&nbsp;<a href="http://{$code.domain}">{$code.domain}</a></p>
+        </div>
+</div>
+<!--内容部分结束-->
+<!--底部开始-->
+<div id="footer">
+    <div class="container">
+        <div class="footer-saoma">
+            <span>今日扫码次数&nbsp;:&nbsp;<small>1220</small></span>
+        </div>
+        <div class="footer-ty text-center">
+            <p>全球二维码编码&nbsp;:&nbsp;<small>{$code.iocode}</small></p>
+            <p>全球统一标识&nbsp;:&nbsp;<small>{$user_code.idCode}</small></p>
+            <p>Copyright&nbsp;&copy2017.&nbsp;<a href="http://www.isqq.org" style="color: #FFFFFF">二维码注册认证平台</a>&nbsp;Reserved.</p>
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--引入jquery必须在bootstrap.min.js-->
+<script src="/bootstrap/dist/js/jquery.min.js"></script>
+<!--最新bootstrap核心javascript文件-->
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--底部导航-->
+<script type="text/javascript">
+    window.onload = function(){
+        $('#menu ul li').each(function(j){
+            $('#menu ul li').eq(j).removeClass("on");
+            $('#menu ul li span').eq(j).animate({bottom:-$('#menu ul li span').eq(j).height()},100);
+        });
+    }
+
+    $('#menu ul li').each(function(i){
+        $(this).click(function(){
+            if($(this).attr("class")!="on"){
+                $('#menu ul .on span').animate({bottom:-$('#menu ul .on span').height()},200);
+                $('#menu ul .on').removeClass("on");
+                $(this).addClass("on");
+                $('#menu ul li span').eq(i).animate({bottom:35},200);
+                $('.footer_front').show();
+            }else{
+                $('#menu ul li span').eq(i).animate({bottom:-$('#menu ul li span').eq(i).height()},200);
+                $(this).removeClass("on");
+                $('.footer_front').hide();
+            }
+        });
+    });
+
+    $('.footer_front').click(function(){
+        $('#menu ul .on span').animate({bottom:-$('#menu ul .on span').height()},200);
+        $('#menu ul .on').removeClass("on");
+        $(this).hide();
+    });
+</script>
+<script src="/web/js/tweetable.js"></script>
+<script src="/web/js/roundabout.js"></script>
+<script src="/web/js/custom.js"></script>
+</body>
+</html>
